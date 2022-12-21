@@ -1,0 +1,39 @@
+{
+  "name": "strapi-plugin-component-preview",
+  "version": "1.0.2",
+  "description": "This plugin shows a preview of the component that is developed.",
+  "strapi": {
+    "name": "componentpreview",
+    "description": "This plugin shows a preview of the component that is developed by adding images.",
+    "kind": "plugin",
+    "displayName": "Component Preview"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vinubabu323/strapi-plugin-component-preview.git"
+  },
+  "author": {
+    "name": "Vinu Babu",
+    "email":"vinubabu323@gmail.com"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^4.0.0" 
+  },
+  "maintainers": [
+    {
+      "name": "A Strapi developer"
+    }
+  ],
+  "keywords": [
+    "strapi",
+    "component",
+    "component preview",
+    "content types"
+  ],
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
