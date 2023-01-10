@@ -21,40 +21,7 @@ Inorder to achieve the url of the file uploading it must be specified in the .en
 
 ### Adding & Accessing URL
 
-1. Add this to the ```FILE_UPLOAD_URL="YOUR_BASE_URL_HERE"``` .env file of your project.
-
-2. Add ```webpack.config.js``` file into **src/admin** and paste this content there.
-
-```
-
-// ./src/admin/webpack.config.js
-
-'use strict';
-
-module.exports = (config, webpack) => {
-
-// Note: we provide webpack above so you should not `require` it
-
-// Perform customizations to webpack config
-
-// Important: return the modified config
-
-config.plugins.push(
-
-new webpack.DefinePlugin({
-
-FILE_UPLOAD_URL: JSON.stringify(process.env.FILE_UPLOAD_URL),
-
-})
-
-)
-
-return config;
-
-};
-
-```
-
+1. Add this to the ```REACT_APP_FILE_UPLOAD_URL="YOUR_BASE_URL_HERE"``` .env file of your project.
 
 This file is added in order to access the **FILE_UPLOAD_URL** in the plugin.
 
