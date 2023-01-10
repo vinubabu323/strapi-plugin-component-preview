@@ -15,7 +15,6 @@ const preview = ({
 
   attribute,
 }) => {
-  console.log(FILE_UPLOAD_URL);
   const [isVisible, setIsVisible] = useState(false);
   return (
     <Box>
