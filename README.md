@@ -13,7 +13,7 @@ The plugin can be used in strapi version above 4.4 (versions that support custom
 
 1. Go into your strapi project.
 
-2. Run the npm command ```npm i strapi-plugin-componentpreview```
+2. Run the npm command ```npm i strapi-plugin-component-preview```
 
 3. The plugin will be added to your strapi project.
 
