@@ -35,7 +35,6 @@ Inorder to achieve the url of the file uploading it must be specified in the .en
          config.plugins.push(
          new  webpack.DefinePlugin({
          FILE_UPLOAD_URL:  JSON.stringify(process.env.FILE_UPLOAD_URL), 
-         FRONT_END_URL:  JSON.stringify(process.env.FRONT_END_URL),
          })
          )
          
