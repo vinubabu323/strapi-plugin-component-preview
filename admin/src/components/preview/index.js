@@ -8,47 +8,38 @@ import {
   ModalLayout,
   ModalBody,
   ModalHeader,
+  FormGroup,
+  Label,
+  Input
 } from "@strapi/design-system";
 
 const preview = ({
   //All these parameters are passed from admin\src\index.js
 
   attribute,
+  value,
+  onChange,
+  name
 }) => {
   const [isVisible, setIsVisible] = useState(false);
   return (
-    <Box>
+       <Box>
       <Typography variant="pi" fontWeight="bold">
-        component_preview
+        Button Preview
       </Typography>
       <Box paddingTop={2}>
-        <Button onClick={() => setIsVisible((prev) => !prev)}>
-          <Typography>Preview</Typography>
-        </Button>
+        <FormGroup>
+          <Label htmlFor="testin">Text</Label>
+          <Input
+            type="text"
+            id="testin"
+            value={value}
+            onChange={(e) => {
+                onChange({ target: { name, value: e.target.value, type: attribute.type } })
+            }}
+          />
+        </FormGroup>
       </Box>
-      {isVisible && (
-        <ModalLayout
-          onClose={() => setIsVisible((prev) => !prev)}
-          labelledBy="title"
-        >
-          <ModalHeader>
-            <Typography
-              fontWeight="bold"
-              textColor="neutral800"
-              as="h2"
-              id="title"
-            >
-              Preview
-            </Typography>
-          </ModalHeader>
-          <ModalBody style={{ height: "auto", maxHeight: "100vh" }}>
-            <img
-              style={{ width: "100%" }}
-              src={FILE_UPLOAD_URL + attribute.options.url}
-            />
-          </ModalBody>
-        </ModalLayout>
-      )}
     </Box>
   );
 };
