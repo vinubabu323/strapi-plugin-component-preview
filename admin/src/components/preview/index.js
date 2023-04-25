@@ -18,9 +18,6 @@ const preview = ({
   const [isVisible, setIsVisible] = useState(false);
   return (
     <Box>
-      <Typography variant="pi" fontWeight="bold">
-        component_preview
-      </Typography>
       <Box paddingTop={2}>
         <Button onClick={() => setIsVisible((prev) => !prev)}>
           <Typography>Preview</Typography>
