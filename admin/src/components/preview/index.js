@@ -15,6 +15,8 @@ const preview = ({
 
   attribute,
 }) => {
+  const imageUrl =
+    process.env.STRAPI_ADMIN_BACKEND_URL + "/" + attribute.options.url;
   const [isVisible, setIsVisible] = useState(false);
   return (
     <Box>
@@ -39,10 +41,7 @@ const preview = ({
             </Typography>
           </ModalHeader>
           <ModalBody style={{ height: "auto", maxHeight: "100vh" }}>
-            <img
-              style={{ width: "100%" }}
-              src={FILE_UPLOAD_URL + attribute.options.url}
-            />
+            <img style={{ width: "100%" }} src={imageUrl} />
           </ModalBody>
         </ModalLayout>
       )}
