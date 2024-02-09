@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-component-preview",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "This plugin shows a preview of the component that is developed.",
   "strapi": {
     "name": "componentpreview",
@@ -15,10 +15,10 @@
   },
   "author": {
     "name": "Vinu Babu",
-    "email":"vinubabu323@gmail.com"
+    "email": "vinubabu323@gmail.com"
   },
   "peerDependencies": {
-    "@strapi/strapi": "^4.0.0" 
+    "@strapi/strapi": "^4.0.0"
   },
   "maintainers": [
     {
